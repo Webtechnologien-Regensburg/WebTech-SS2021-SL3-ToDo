@@ -1,0 +1,17 @@
+{
+    "name": "sl3-todo-liste",
+    "version": "1.0.0",
+    "description": "A simple ToDo-App with Node.js and SQLite",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "author": "Alexander Bazo <alexanderbazo@googlemail.com>",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "express": "^4.17.1",
+        "sqlite3": "^5.0.2"
+    }
+}
