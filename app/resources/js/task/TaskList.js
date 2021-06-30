@@ -6,15 +6,6 @@ import { Event, Observable } from "../utils/Observable.js";
 var taskList,
     taskViews = [];
 
-function clearList() {
-    let completedTasks = taskViews.filter(function(view) {
-        return view.isMarkedAsCompleted();
-    });
-    for (let i = 0; i < completedTasks.length; i++) {
-        let taskEvent = new Event("taskDeletionRequest", completedTasks[i].getTask());
-        this.notifyAll(taskEvent);
-    }
-}
 
 function addTask(task, context) {
     let view = new TaskView(task);
@@ -23,17 +14,6 @@ function addTask(task, context) {
     view.addEventListener("taskViewStatusChange", onTaskViewUpdated.bind(context));
     view.addEventListener("taskViewTextChange", onTaskViewUpdated.bind(context));
     view.focus();
-}
-
-function removeTask(task) {
-    for (let i = 0; i < taskViews.length; i++) {
-        let currentView = taskViews[i];
-        if (currentView.getTask().id === task.id) {
-            currentView.removeElement();
-            taskViews.splice(i, 1);
-            break;
-        }
-    }
 }
 
 function onTaskViewUpdated(event) {
@@ -50,14 +30,6 @@ class TaskList extends Observable {
 
     add(task) {
         addTask(task, this);
-    }
-
-    remove(task) {
-        removeTask(task);
-    }
-
-    clear() {
-        clearList();
     }
 
 }

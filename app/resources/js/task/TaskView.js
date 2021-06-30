@@ -40,12 +40,12 @@ class TaskView extends Observable {
 
     onTextContentChanged(event) {
         this.task.setDescription(event.target.value);
-        broadCastUpdateEvent(this);
     }
 
     onKeyPressed(event) {
         if (event.key === "Enter") {
             this.textInput.blur();
+            broadCastUpdateEvent(this);
         }
     }
 
