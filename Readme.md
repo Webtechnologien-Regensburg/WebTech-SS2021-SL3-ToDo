@@ -22,7 +22,9 @@ header-includes: |
 
 # ToDo-App mit Server-Datenbank
 
-...
+In dieser Aufgaben entwickeln Sie die Client-Server-Interaktion eines Web-basierten Notizblocks. In diesem Notizblock können Einträge erstellt, aktualisiert und als Erledigt markiert werden. Ihre Anwendung kommuniziert im Hintergrund mit einer Datenbank und ermöglicht so das Auslesen und persistente Verändern und Abspeichern von Daten. 
+
+Durch die Betätigung des "+"-Elements im UI der Webseite kann der Liste des Notizblockes ein neues Element hinzugefügt werden. Das Erstellen eines Elements soll an die Datenbank des Webservers weitergeleitet und dort abgespeichert werden. Ebenso sollen auch Änderungen am Element (Text oder auch das Markieren als Erledigt) mit der Datenbank kommuniziert werden. Falls der Datenbank bereits Einträge hinzugefügt wurden, sollen diese beim erneuten Laden des Notizblockes von der Datenbank bezogen und angezeigt werden, um eine aktuelle Ansicht der Liste zu repräsentieren.
 
 ### Vorgaben
 
