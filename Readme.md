@@ -28,7 +28,12 @@ Durch die Betätigung des "+"-Elements im UI der Webseite kann der Liste des Not
 
 ### Vorgaben
 
-...
+Im [\textcolor{blue}{Starterpaket}](https://elearning.uni-regensburg.de/course/view.php?id=49971#section-0) finden Sie ein bereits angefangenes Projekt, in welchem ein vollständiges HTML-Dokument sowie eine bereits verknüpfte CSS-Datei die vom Webserver an den Client ausgeliefert werden. Ebenfalls ausgeliefert werden mehrere JavaScript-Dateien, die mit der HTML-Datei aufgerufen werden. Die Dateien Task.js, TaskList.js und TaskView.js im Ordner `app/resources/js/task` übernehmen die Client-seitige Darstellung und Interaktion des Notizblocks. Die Klassen Task und TaskList verwalten hierzu die interne Objekt-Struktur des Notizblocks und die Klasse TaskView realisiert das User Interface der Anwendung, also die Darstellung und Interaktion der Listen-Elemente. Zudem wird Ihnen über die Datei `app/resources/js/http/FetchHelper.js` die Klasse FetchHelper bereitgestellt, mit welcher Sie über die vorgefertigte Funktion `makeRequest` Anfragen an Ihren Webserver stellen können. An keiner dieser vier Dateien müssen Sie eigenständig Veränderungen vornehmen. Sie können Ihre Arbieten in der Datei app.js (`app/resources/js/`) beginnen, welche die zentrale JavaScript-Datei Ihrer Webseite darstellt. 
+
+Für den Webserver existiert bereits eine SQL3-Datenbank (`data/todo.db`) sowie die dazugehörige JavaScript-Datei Database.js im Stammordner `lib`, welche die grundsätzliche Anbindung an die Datenbank übernimmt. In der JavaScript-Datei index.js wird die grundlegende Funktionalität (Bereitstellung von HTTP-Routen und der statischen Webseite) realisiert. Sowohl die Datei Database.js als auch index.js sollen um Funktionialität ergänzt werden.
+
+Alle benötigten Dateien sind kommentiert und zu Erledigende Aufgaben sind im Quellcode markiert.
+
 
 ### Starten der Anwendung
 
