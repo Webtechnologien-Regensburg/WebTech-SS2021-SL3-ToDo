@@ -44,13 +44,13 @@ Um die Anwendung korrekt auszuführen, wird ein lokaler Webserver benötigt. Die
 
 ### Verpflichtende Anforderungen
 
-Folgende Anforderungen müssen Sie für alle drei Interaktionsmöglichkeiten zwischen Client-User Interface und Webserver-Datenbank umsetzen (Laden aller gespeicherten Daten, Erstellen eines neuen Eintrags, Aktualisieren eines bestehenden Eintrags):
+Folgende Anforderungen müssen Sie für alle drei Interaktionsmöglichkeiten zwischen dem Client-User Interface und der Webserver-Datenbank umsetzen (Laden aller gespeicherten Daten, Erstellen eines neuen Eintrags, Aktualisieren eines bestehenden Eintrags):
 
 - Implementieren Sie die bereits bestehenden Funktionen `getAllTasks`, `addTask` und `updateTask` in der Datei `Database.js` um die geforderten Funktionialitäten (GET, PUT und UPDATE) für die Datenbank in Form von SQL-Queries zu realisieren.
 
 - Verarbeiten Sie im Webserver eingehende HTTP-Anfragen in den Funktionen `onTasksRequested`, `onTaskAdded` und `onTaskUpdated` der Datei `index.js`, indem Sie die die jeweilige Anfrage verarbeiten, an die Datenbank weiterleiten und abschließend eine Antwort zurücksenden.
 
-- Entwickeln Sie passende HTTP-Anfragen, um die Funktionalitäten des Notizblocks an den Webserver weiterzuleiten. Erweitern Sie hierzu die Funktionen `loadDatabaseFromServer` (Lade alle Notizbuch-Einträge von der Datenbank und stelle diese im UI dar), `onNewTaskButtonClicked` (Erstelle neuen Eintrag und speichere diesen in der Datenbank) und `onTaskChangedByUser` (Speichere veränderten Eintrag in der Datenbank ab) der Datei `app.js` um verschiedene Fetch-Anfragen, deren Funktionalität über die Funktion `makeRequest` der Klasse `FetchHelper` bereitgestellt wird.
+- Entwickeln Sie passende HTTP-Anfragen, um die Funktionalitäten des Notizblocks an den Webserver weiterzuleiten. Erweitern Sie hierzu die Funktionen `loadDatabaseFromServer` (Lade alle Notizbuch-Einträge von der Datenbank und stelle diese im UI dar), `onNewTaskButtonClicked` (Erstelle neuen Eintrag und speichere diesen in der Datenbank) und `onTaskChangedByUser` (Aktualisiere veränderten Eintrag in der Datenbank) der Datei `app.js` um verschiedene Fetch-Anfragen, deren Funktionalität über die Funktion `makeRequest` der Klasse `FetchHelper` bereitgestellt wird.
 
 - Verarbeiten Sie die Antwort des Webservers auf Ihre HTTP-Anfragen wo nötig (z.B. Erstellen einer Darstellung der bereits existierenden Einträge des Notizblocks).
 
