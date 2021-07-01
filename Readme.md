@@ -44,8 +44,20 @@ Um die Anwendung korrekt auszuführen, wird ein lokaler Webserver benötigt. Die
 
 ### Verpflichtende Anforderungen
 
-- ...
+Folgende Anforderungen müssen Sie für alle drei Interaktionsmöglichkeiten zwischen Client-User Interface und Webserver-Datenbank umsetzen (Laden aller gespeicherten Daten, Erstellen eines neuen Eintrags, Aktualisieren eines bestehenden Eintrags):
 
+- Entwickeln Sie passende HTTP-Anfragen, um die Funktionalitäten des Notizblocks an den Webserver weiterzuleiten. Erweitern Sie hierzu die Funktionen `loadDatabaseFromServer`, `onNewTaskButtonClicked` und `onTaskChangedByUser` der Datei `app.js` um verschiedene Fetch-Anfragen, deren Funktionalität über die Funktion `makeRequest` der Klasse `FetchHelper` bereitgestellt wird. Vergessen Sie hierbei nicht die Antwort des Webservers zu verarbeiten (z.B. die Darstellung der bereits existierenden Einträge des Notizblocks).
+
+- Implementieren Sie die bereits bestehenden Funktionen `getAllTasks`, `addTask` und `updateTask` in der Datei `Database.js` um die geforderten Funktionialitäten (GET, PUT und UPDATE) für die Datenbank in Form von SQL-Queries zu realisieren.
+
+- Verarbeiten Sie im Webserver eingehende HTTP-Anfragen in den Funktionen `onTasksRequested`, `onTaskAdded` und `onTaskUpdated` der Datei `index.js`, indem Sie die die jeweilige Anfrage verarbeiten, an die Datenbank weiterleiten und abschließend eine Antwort zurücksenden.
+
+
+### Optionale Anforderungen
+
+- Implementieren Sie die Möglichkeit Einträge aus dem Notizblock zu löschen. Sie können sich hierfür an bereits bestehender Programmstruktur anderer Funktionalitäten orientieren.
+
+Achten Sie auf bisher gelernte Prinzipien zur Code-Qualität und kommentieren Sie Ihre Lösung ausreichend.
 
 ------
 
