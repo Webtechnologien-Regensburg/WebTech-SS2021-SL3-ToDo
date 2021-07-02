@@ -30,7 +30,7 @@ Durch die Betätigung des "+"-Elements im UI der Webseite kann der Liste des Not
 
 Im [\textcolor{blue}{Starterpaket}](https://elearning.uni-regensburg.de/course/view.php?id=49971#section-0) finden Sie ein angefangenes Projekt, in welchem ein vollständiges HTML-Dokument und eine bereits verknüpfte CSS-Datei vorhanden sind, die vom Webserver an den Client ausgeliefert werden. Ebenfalls ausgeliefert werden mehrere JavaScript-Dateien, die zusammen mit der HTML-Datei aufgerufen werden. Die Dateien `Task.js`, `TaskList.js` und `TaskView.js` im Ordner `app/resources/js/task` übernehmen die Client-seitige Darstellung und Interaktion des Notizblocks. Die Klassen `Task` und `TaskList` verwalten hierzu die interne Objekt-Struktur des Notizblocks und die Klasse `TaskView` realisiert das User Interface der Anwendung, also Darstellung und Interaktion der Listen-Elemente. Zudem wird Ihnen über die Datei `app/resources/js/http/FetchHelper.js` die Klasse FetchHelper bereitgestellt, mit welcher Sie über die vorgefertigte Funktion `makeRequest` Anfragen an Ihren Webserver stellen können. An keiner dieser Dateien müssen Sie eigenständig Veränderungen vornehmen. Sie können Ihre Arbeiten in der Datei `app/resources/js/app.js` beginnen, welche die zentrale JavaScript-Datei Ihrer Client-Webseite darstellt. 
 
-Für den Webserver existiert bereits eine SQL3-Datenbank (`data/todo.db`) sowie die dazugehörige JavaScript-Datei Database.js im Stammverzeichnis `lib`, welche die grundsätzliche Anbindung an die Datenbank übernimmt. In der JavaScript-Datei index.js wird die grundlegende Funktionalität (Bereitstellung von HTTP-Routen und der statischen Webseite) des Webservers realisiert. Sowohl die Datei Database.js als auch index.js sollen um Funktionialität ergänzt werden.
+Für den Webserver existiert bereits eine SQL3-Datenbank (`data/todo.db`) sowie die dazugehörige JavaScript-Datei `Database.js` im Stammverzeichnis `lib`, welche die grundsätzliche Anbindung an die Datenbank übernimmt. In der JavaScript-Datei `index.js` wird die grundlegende Funktionalität (Bereitstellung von HTTP-Routen und der statischen Webseite) des Webservers realisiert. Sowohl die Datei `Database.js` als auch `index.js` sollen um Funktionialität ergänzt werden.
 
 Alle benötigten Dateien sind kommentiert und zu erledigende Aufgaben sind im Quellcode markiert.
 
@@ -66,7 +66,7 @@ Achten Sie auf bisher gelernte Prinzipien zur Code-Qualität und kommentieren Si
 
 *Abgabekriterien:*
 
-Laden Sie Ihre Lösung bis spätestens 18.6.2021 (23:59 Uhr) als zip-komprimierten Ordner auf GRIPS hoch.  Benennen Sie die einzelnen Dateien pro Aufgabe sinnvoll und verwenden Sie geeignete Formate:
+Laden Sie Ihre Lösung bis spätestens 23.07.2021 (23:59 Uhr) als zip-komprimierten Ordner auf GRIPS hoch.  Benennen Sie die einzelnen Dateien pro Aufgabe sinnvoll und verwenden Sie geeignete Formate:
 
 - Aufgabe 1: Das gesamte Projekt (HTML, JS, CSS)
 
