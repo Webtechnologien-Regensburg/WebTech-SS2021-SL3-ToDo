@@ -38,7 +38,6 @@ Alle benötigten Dateien sind kommentiert und zu erledigende Aufgaben sind im Qu
 ### Starten der Anwendung
 
 
-
 Um die Anwendung korrekt auszuführen, wird ein lokaler Webserver benötigt. Die LiveShare-Funktion von _Visual Studio Code_ reicht hierfür nicht mehr aus. Statt dessen starten wir den Server direkt über die _Node.js_-Umgebung. Installieren Sie _Node.js_ über die entsprechende Installationsdatei für Ihr Betriebssystem, die Sie [\textcolor{blue}{hier}](
 ) herunterladen können. Öffnen Sie dann den Projektordner in _Visual Studio Code_ und Starten Sie das [\textcolor{blue}{integrierte Terminal}](https://code.visualstudio.com/docs/editor/integrated-terminal). Führen Sie dort den Befehl **npm install** aus, um das Projekt vorzubereiten. Dannach können Sie über die Eingabe des Befehls **npm start** den Server starten und den Client im Browser über die Adresse **http://localhost:8080/** aufrufen. Wenn Sie im integrierten Terminal die Tastenkombination **STRG** + **C** drücken, wird der Server beendet.
 
