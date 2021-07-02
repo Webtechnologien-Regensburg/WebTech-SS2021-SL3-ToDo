@@ -24,6 +24,7 @@ class FetchHelper {
             };
         if (method !== "HEAD" && method !== "GET") {
             options.body = JSON.stringify(data);
+            options.headers = { "Content-Type": "application/json" };
         }
         response = await fetch(url, options);
         result = await response.json();
